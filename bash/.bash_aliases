@@ -1,0 +1,10 @@
+alias gp="git pull"
+alias ga="git add ."
+alias gst="git status"
+alias gls="git ls -6"
+alias g="gulp"
+alias h="hologram"
+alias be="bundle exec"
+
+alias al="vim ~/.bash_aliases"
+alias .al=". ~/.bash_aliases"
