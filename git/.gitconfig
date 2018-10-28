@@ -1,0 +1,28 @@
+[alias]
+	up = pull
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	ls = log --pretty=format:\"%C(yellow)%h%C(reset) %C(cyan)%ad%C(reset) | %C(green)%an%C(reset) | %C(white)%s%C(reset)\"
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+
+[color]
+	ui = true
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[user]
+	name = Matt Aho
+	email = matt@mattaho.com
+
+[push]
+	default = current
+
+[core]
+	editor = vim
+	pager = less -F
