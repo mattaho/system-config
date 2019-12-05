@@ -1,15 +1,20 @@
 {
   "vim.insertModeKeyBindings": [
-      {
-          "before": ["k", "j"],
-          "after": ["<esc>"]
-      }
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<esc>"
+      ]
+    }
   ],
   "vim.useSystemClipboard": true,
   "editor.tabSize": 2,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
   "editor.wordWrap": "on",
   "files.autoSave": "onWindowChange",
   "editor.fontSize": 15,
@@ -18,10 +23,10 @@
   "files.insertFinalNewline": true,
   "window.zoomLevel": 0,
   "colorize.colorized_variables": [
-      "CSS",
-      "SCSS",
-      "SASS",
-      "LESS"
+    "CSS",
+    "SCSS",
+    "SASS",
+    "LESS"
   ],
   "scss.validate": false,
   "editor.minimap.maxColumn": 80,
@@ -38,8 +43,9 @@
   "workbench.editor.tabSizing": "shrink",
   "explorer.openEditors.visible": 0,
   "emmet.includeLanguages": {
-      "javascript": "javascriptreact",
-      "vue-html": "html"
+    "erb": "html",
+    "javascript": "javascriptreact",
+    "vue-html": "html"
   },
   "search.location": "panel",
   "editor.formatOnSave": true,
@@ -50,5 +56,15 @@
   "files.eol": "\n",
   "gitlens.defaultDateStyle": "absolute",
   "gitlens.codeLens.enabled": false,
-  "editor.parameterHints.enabled": false
-  }
+  "editor.parameterHints.enabled": false,
+  "colorize.ignore_search_variables_info": true,
+  "editor.snippetSuggestions": "top",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.editor.tabCloseButton": "off",
+  "vsicons.dontShowNewVersionMessage": true
+}
